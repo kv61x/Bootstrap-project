@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="style.css"/>
+    
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    
+    
+    <title>Komputerowo</title>
+  
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand"><img src="img/icon.png" style="width: 200px;"></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">O Nas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Pytania</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Naprawa</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cennik" class="nav-link">Cennik</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1 style="font-weight: 700;">KIM<span style="color: blueviolet;">JESTEŚMY</span></h1>
+            <p class="lead my-4">
+              Jesteśmy serwisem który zajmuje się naprawą różnych urządzeń elektronicznych takich jak komputery, laptopy czy telefony oraz oferujemy pomoc w dziedzinie informatyki.    
+            </p>
+            <button
+              class="btn btn-light"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Zamów Usługe
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/my2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/my.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2 style="font-weight: 700;">O Naszej Firmie</h2>
+            <p class="lead">
+             Jesteśmy firmą zajmującą się,
+            </p>
+            <p>
+              naprawą komputerów, oferujemy pomoc w przypadku awarii sprzętu. Serwis komputerowy oferuje wiele usług, takich jak reinstalacja systemu, instalowanie oprogramowania, czyszczenie komputera, wymiana lub dodanie karty graficznej, wymiana bądź dodanie dysku twardego, wymiana lub dodanie napędu optycznego, wymiana lub dodanie karty rozszerzeń, wymiana obudowy PC w komputerach stacjonarnych i wiele innych.
+
+            </p>
+            <a href="#" class="btn btn-dark mt-3">
+              <i class="bi bi-chevron-right"></i> Więcej
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2 style="
+            font-weight: 700;
+            color: blueviolet;
+            ">Nowości</h2>
+            <p class="lead">
+              Naprawa telefonów
+            </p>
+            <p>
+              od niedawna zajmujemy się również naprawą telefonów, wymieniamy matryce, obudowe, ekran, przyciski oraz naprawiamy szkodliwe błedy 
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Więcej
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/my3.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4"
+        style="
+        font-weight: 700;
+        ">Często Zadawane Pytania</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+              Jakie usługi oferujecie?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Jakie usługi oferujecie? - oferujemy pomoc w przypadku awarii sprzętu. Serwis komputerowy oferuje wiele usług, takich jak reinstalacja systemu, instalowanie oprogramowania, czyszczenie komputera, wymiana lub dodanie karty graficznej, wymiana bądź dodanie dysku twardego, wymiana lub dodanie napędu optycznego, wymiana lub dodanie karty rozszerzeń, wymiana obudowy PC w komputerach stacjonarnych i wiele innych.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+              Jakie są ceny usług?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Jakie są ceny usług? - Ceny usług są dostosowywane od stanu danego sprzętu lecz cena nie przekracza 200zł w przypadku naprawy bez wymiany części.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+              Czy oferujecie gwarancję na wykonane prace?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Czy oferujecie gwarancję na wykonane prace? - Oferujemy gwarancję na 12 miesięcy.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+              Czy oferujecie usługi na miejscu, czy wymagacie dostarczenia sprzętu?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Czy oferujecie usługi na miejscu, czy wymagacie dostarczenia sprzętu? - Nie wymagamy dostarczania sprzętu, lecz jest to możliwe.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center "
+        style="
+        font-weight: 700;
+        color: blueviolet;
+        "
+        >
+        Naprawimy</h2>
+        <p class="lead text-center text-white mb-5">
+         Naprawimy twój nie działający sprzęt!!!
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/naprawiamy/system.png"
+                  class="rounded-circle mb-3"
+                  alt=""
+                  style="width: 200px;"
+                />
+                <h3 class="card-title mb-3">System</h3>
+                <p class="card-text">
+                  instalacja oraz naprawa systemu windows, linux, macos, android, ios
+                </p>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/naprawiamy/komputery.png"
+                  class="rounded-circle mb-3"
+                  alt=""
+                  style="width: 200px;"
+                />
+                <h3 class="card-title mb-3">Komputery</h3>
+                <p class="card-text">
+                  wymiana części, instalacja kart rozszerzeń, optymalizacja
+                </p>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/naprawiamy/laptopy.png"
+                  class="rounded-circle mb-3"
+                  alt=""
+                  style="width: 200px;"
+                />
+                <h3 class="card-title mb-3">Laptopy</h3>
+                <p class="card-text">
+                  wymiana dysku lub baterii, naprawa uszkodzeń, optymalizacja
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/naprawiamy/telefony.png"
+                  class="rounded-circle mb-3"
+                  alt=""
+                  style="width: 200px;"
+                />
+                <h3 class="card-title mb-3">Telefony</h3>
+                <p class="card-text">
+                 wymiana części, czyszczenie dysku, rozwiązywanie błedów
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cennik" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2 style="font-weight: 700;">Cennik</h2>
+            <p class="lead">
+              Cennik usług serwisowych
+            </p>
+            <p>
+              Komputerowo.pl wiemy, jak ważne jest dla Ciebie poznanie jasnych i transparentnych informacji dotyczących cen naszych usług serwisowych. Dlatego przygotowaliśmy przejrzysty cennik, abyś mógł łatwo znaleźć informacje na temat kosztów napraw, konserwacji i innych usług oferowanych przez naszą firmę.
+            </p>
+            <p>
+              Nasze ceny są konkurencyjne i dostosowane do zakresu i skomplikowania wykonywanych prac. Wierzymy w uczciwość wobec naszych klientów, dlatego przed rozpoczęciem jakiejkolwiek naprawy lub usługi udzielamy szczegółowych informacji na temat kosztów i czasu wykonania.
+            </p>
+            <p>
+              W przypadku bardziej skomplikowanych napraw, konfiguracji sieciowych lub innych złożonych zadań, zachęcamy do kontaktu bezpośredniego z naszym zespołem. Nasi wykwalifikowani technicy odpowiedzą na Twoje pytania, udzielą szczegółowych informacji i przygotują dla Ciebie indywidualną ofertę.
+            </p>
+            <p>
+            Przybliżone ceny niektórych pojedynczych usług serwisowych i pomocy:
+            </p>
+            <p>
+            -instalacja systemu operacyjnego Windows - 11, 10, 8.1, 7 - od 100 zł,
+            </p>
+            <p>
+            -optymalizacja pracy komputera - od 50 zł,
+            </p>
+            <p>
+            -usuwanie złośliwego oprogramowania, wirusów, trojanów - od 50 zł,
+            </p>
+            <p>
+            -kosmetyka wnętrza komputera stacjonarnego (czyszczenie) - od 100 zł,
+            </p>
+            <p>
+            -instalacja oprogramowania (np: MS Office, Photoshop), sterowników - od 30 zł/program,
+            </p>
+            <p>
+            -instalacja oprogramowania chroniąca komputer przed atakami z sieci - od 50 zł,
+            </p>
+            <p>
+            -konfiguracja programów, poczty, edytorów, odtwarzaczy - od 80 zł,
+            </p>
+            <p>
+            -formatowanie, zerowanie oraz partycjonowanie dysku - od 30 zł,
+            </p>
+            <p>
+            -instalacja lub wymiana dodatkowych napędów, dysków twardych, pamięci, kart rozszerzeń - od 50 zł,
+            </p>
+            <p>
+            -odzyskiwanie utraconych danych z dysków twardych, kart pamięci, płyt CD/DVD, przenośnych urządzeń- od 200 zł,
+            </p>
+            <p>
+            -archiwizacja i kopiowanie danych - od 50 zł,
+            </p>
+            <p>
+            -konfiguracja sieci, dzielenie internetu, montaż urzadzeń sieciowych - od 100 zł,
+            </p>
+            <p>
+            -diagnoza sprzętu, porady techniczne - od 50 zł,
+            </p>
+            
+            <a href="#" class="btn btn-dark mt-3">
+              <i class="bi bi-chevron-right"></i> Więcej
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="p-5 bg-dark text-light">
+      <div class="container">
+        <h2 class="text-center "
+        style="
+        font-weight: 700;
+        color: blueviolet;
+        "
+        >
+        Kontakt</h2>
+        <p class="lead text-center text-white mb-5">
+          informacje dotyczące kontaktu
+         </p>
+        <div class="row g-4">
+          
+
+         <div class="col-md">
+            
+
+              <p>
+                <span class="fw-bold">Nasza lokacja:</span> 
+              <p>Emilii Zawidzkiej 10, </p>
+              <p>41-300 Dąbrowa Górnicza</p>
+              </p><br>
+              <p>
+                <span class="fw-bold">Telefon:</span> 
+                <p>32 262 43 13</p>
+              </p><br>
+              <p>
+                <span class="fw-bold">Email:</span> 
+                <p>sekretariat@tzn.dg.pl</p>
+              </p>
+            
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  
+
+
+
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">kv61x &copy; 2023</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js">
+  
+    </script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [19.206864922883803, 50.32908035998133],
+        zoom: 16,
+      })
+    </script>
+  
+</body>
+</html>
